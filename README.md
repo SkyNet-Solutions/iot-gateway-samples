@@ -1,5 +1,5 @@
 # iot-gateway-samples(Update in progress)
-This repository contains samples for connecting your gateway to the IBM Watson Internet of Things Platform and perform one or more operations. Currently, there are samples for Node.js and Java; information and instructions regarding the use of these samples can be found in their respective directories.
+This repository contains samples for connecting your gateway to the IBM Watson Internet of Things Platform and perform one or more operations. Currently, there are samples for Java; information and instructions regarding the use of these samples can be found in their respective directories.
 
 Gateways are a specialized class of devices in Watson IoT Platform which serve as access points to the Watson IoT Platform for other devices. Gateway devices have additional permission when compared to regular devices and can perform the following  functions:
 
