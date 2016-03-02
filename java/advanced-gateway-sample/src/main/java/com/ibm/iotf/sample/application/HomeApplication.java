@@ -44,7 +44,7 @@ import com.ibm.iotf.sample.gateway.home.Oven.MODE;
  */ 
 public class HomeApplication {
 
-	private final static String PROPERTIES_FILE_NAME = "/application.prop";
+	private final static String PROPERTIES_FILE_NAME = "/application.properties";
 	
 	private final static JsonParser JSON_PARSER = new JsonParser();
 
