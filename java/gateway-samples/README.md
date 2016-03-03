@@ -16,7 +16,9 @@ Prerequisites
 To build and run the samples, you must have the following installed:
 
 * [git](https://git-scm.com/)
+
 * [maven](https://maven.apache.org/download.cgi)
+
 * Java 7+
 
 ----
