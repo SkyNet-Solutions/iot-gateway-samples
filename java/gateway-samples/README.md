@@ -8,6 +8,7 @@ Following are examples present in this project,
 * SimpleGatewayExample
 * SampleRasPiGateway
 * ManagedRasPiGateway
+
 ----
 
 Prerequisites
@@ -37,18 +38,21 @@ Building the samples
     
 This will download the Java Client library for Watson IoT Platform (Currently its shipped as part of this sample, but soon it will be made available in maven central repository), download all required dependencies and starts the building process. Once built, the sample can be located in the target directory, for example, target\ibmiot-gateway-samples-0.0.1.jar.
 
+----
+
 Register Gateway in IBM Watson IoT Platform
 ===========================================
 
 Follow the steps in [this recipe](https://developer.ibm.com/recipes/tutorials/how-to-register-gateways-in-ibm-watson-iot-platform/) to register your gateway in Watson IoT Platform if not registered already. And copy the registration details, like the following,
 
 * Organization-ID = [Your Organization ID]
-* Gateway-Type = Your Gateway Device Type
-* Gateway-ID = Your Gateway Device ID
+* Gateway-Type = [Your Gateway Device Type]
+* Gateway-ID = [Your Gateway Device ID]
 * Authentication-Method = token
-* Authentication-Token = Your Gateway Token
+* Authentication-Token = [Your Gateway Token]
 
 We need these details to connect the gateway to IBM Watson IoT Platform.
+
 ----
 
 Running SimpleGatewayExample
@@ -61,6 +65,7 @@ A stand-alone sample that connects a gateway and a device behind the gateway to 
     `mvn exec:java -Dexec.mainClass="com.ibm.iotf.sample.client.gateway.SimpleGatewayExample"`
 
 **Note:** If there is an Error, try extracting the ibmwiotp.jar present in target/classes directory to the same location and run again. Remember the jar must be extracted in the same location. 
+
 ----
 
 Running SampleRasPiGateway
@@ -71,6 +76,7 @@ The Gateway support is demonstrated in this sample by connecting the Arduino Uno
     `mvn exec:java -Dexec.mainClass="com.ibm.iotf.sample.client.gateway.SampleRasPiGateway"`
 
 **Note:** If there is an Error, try extracting the ibmwiotp.jar present in target/classes directory to the same location and run again. Remember the jar must be extracted in the same location. 
+
 ----
 
 Running ManagedRasPiGateway
@@ -81,4 +87,5 @@ Running ManagedRasPiGateway
     `mvn exec:java -Dexec.mainClass="com.ibm.iotf.sample.client.gateway.devicemgmt.ManagedRasPiGateway"`
 
 **Note:** If there is an Error, try extracting the ibmwiotp.jar present in target/classes directory to the same location and run again. Remember the jar must be extracted in the same location. 
+
 ----
