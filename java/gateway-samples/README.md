@@ -43,8 +43,8 @@ This will download the Java Client library for Watson IoT Platform (Currently it
 Follow the steps in [this recipe](https://developer.ibm.com/recipes/tutorials/how-to-register-gateways-in-ibm-watson-iot-platform/) to register your gateway in Watson IoT Platform if not registered already. And copy the registration details, like the following,
 
 * Organization-ID = [Your Organization ID]
-* Gateway-Type = [Your Gateway Device Type]
-* Gateway-ID = [Your Gateway Device ID]
+* Device-Type = [Your Gateway Device Type]
+* Device-ID = [Your Gateway Device ID]
 * Authentication-Method = token
 * Authentication-Token = [Your Gateway Token]
 
