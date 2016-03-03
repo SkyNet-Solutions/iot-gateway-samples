@@ -1,4 +1,4 @@
-gateway-samples
+# Gateway samples
 ============================================
 
 This Java project contains 3 samples, which will help you to connect your Gateway and devices behind the Gateway to IBM Watson Internet of Things Platform. All the samples use the Java Client Library for IBM Watson IoT Platform, that simplifies the Gateway interactions with the Platform.
@@ -11,7 +11,7 @@ Following are examples present in this project,
 
 ----
 
-Prerequisites
+### Prerequisites
 =============
 To build and run the samples, you must have the following installed:
 
@@ -21,7 +21,7 @@ To build and run the samples, you must have the following installed:
 
 ----
 
-Building the samples
+### Building the samples
 =====================
 
 * Clone the gateway-samples project using git clone as follows,
@@ -40,7 +40,7 @@ This will download the Java Client library for Watson IoT Platform (Currently it
 
 ----
 
-Register Gateway in IBM Watson IoT Platform
+### Register Gateway in IBM Watson IoT Platform
 ===========================================
 
 Follow the steps in [this recipe](https://developer.ibm.com/recipes/tutorials/how-to-register-gateways-in-ibm-watson-iot-platform/) to register your gateway in Watson IoT Platform if not registered already. And copy the registration details, like the following,
@@ -55,7 +55,7 @@ We need these details to connect the gateway to IBM Watson IoT Platform.
 
 ----
 
-Running SimpleGatewayExample
+### Running SimpleGatewayExample
 ============================
 A stand-alone sample that connects a gateway and a device behind the gateway to IBM Watson IoT Platform. 
 
@@ -68,8 +68,8 @@ A stand-alone sample that connects a gateway and a device behind the gateway to 
 
 ----
 
-Running SampleRasPiGateway
-============================
+### Running SampleRasPiGateway Sample
+=====================================
 The Gateway support is demonstrated in this sample by connecting the Arduino Uno to Raspberry Pi, where the Raspberry Pi act as a Gateway and publishes events/receives commands on behalf of Arduino Uno to IBM Watson IoT Platform. This sample has a simulator object and can be used in the places where Raspberry Pi and Arduino Uno is not there. Refer to [this recipe](https://developer.ibm.com/recipes/tutorials/connect-raspberry-pi-as-gateway-to-watson-iot-platform/) for more information about the sample and how to run the sample in detail?
 
 * Run the sample using the following command
@@ -79,8 +79,8 @@ The Gateway support is demonstrated in this sample by connecting the Arduino Uno
 
 ----
 
-Running ManagedRasPiGateway
-============================
+### Running ManagedRasPiGateway Sample
+======================================
 **Gateway Device Management(DM)** capabilities are demonstrated in this sample by managing the Arduino Uno device through the Raspberry Pi Gateway. If you do not have Raspberry Pi and Arduino UNO, don’t worry, you can still follow the sample to connect your device as a gateway and manage one or more attached devices. In this case, you can use your Windows or Linux server as the gateway instead of Raspberry Pi. Also, the sample has a simulator in place of Arduino UNO to respond to gateway requests. Refer to [this recipe](https://developer.ibm.com/recipes/tutorials/raspberry-pi-as-managed-gateway-in-watson-iot-platform-part-1/) for more information about the sample and how to run the sample in detail?
 
 * Run the sample using the following command
