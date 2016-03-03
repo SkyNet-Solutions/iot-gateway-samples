@@ -16,9 +16,7 @@ Prerequisites
 To build and run the samples, you must have the following installed:
 
 * [git](https://git-scm.com/)
-
 * [maven](https://maven.apache.org/download.cgi)
-
 * Java 7+
 
 ----
@@ -28,20 +26,16 @@ Building the samples
 
 * Clone the gateway-samples project using git clone as follows,
 
-.. code:: java
-
     git clone https://github.com/ibm-messaging/gateway-samples.git
     
 * Navigate to the gateway-samples project, 
-
-.. code:: java
 
     cd gateway-samples\java\gateway-samples
     
 * Run the maven build as follows,
 
-.. code:: java
-
     mvn clean package
     
-This will download the Java Client library for Watson IoT Platform (Currently its shipped as part of this sample, but soon it will be made available in maven central repository), download all required dependencies and copy any files located in the resource directory. Once built, the sample can be located in the target directory, for example, target\ibmiot-gateway-samples-0.0.1.jar.
+This will download the Java Client library for Watson IoT Platform (Currently its shipped as part of this sample, but soon it will be made available in maven central repository), download all required dependencies and starts the building process. Once built, the sample can be located in the target directory, for example, target\ibmiot-gateway-samples-0.0.1.jar.
+
+Running 
