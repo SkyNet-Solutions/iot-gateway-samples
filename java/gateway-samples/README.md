@@ -78,6 +78,10 @@ The Gateway support is demonstrated in this sample by connecting the Arduino Uno
 
 **Note:** If there is an Error, try extracting the ibmwiotp.jar present in target/classes directory to the same location and run again. Remember the jar must be extracted in the same location. 
 
+* In order to push the command to blink the LED, one need to start the sample application present in the sample, Run the following command to start the application sample,
+
+    `mvn exec:java -Dexec.mainClass="com.ibm.iotf.sample.client.application.SampleApplication"`
+
 ----
 
 ### Running ManagedRasPiGateway Sample
