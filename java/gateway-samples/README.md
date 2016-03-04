@@ -20,7 +20,7 @@ To build and run the samples, you must have the following installed:
 
 ----
 
-### Build & Runing the samples using Eclipse
+### Build & Run the samples using Eclipse
 
 You must have installed the [Eclipse Maven plugin](http://www.eclipse.org/m2e/), to import & run the samples in eclipse. Go to the next step, if you want to run manually.
 
