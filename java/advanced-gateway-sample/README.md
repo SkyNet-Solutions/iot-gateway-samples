@@ -1,7 +1,7 @@
 Advanced gateway sample
 ============================================
 
-In this sample, we demonstrate a sample home gateway that manages few attached home devices like, Lights, Switchs, Elevator, Oven and OutdoorTemperature. And the following configuration is assumed,
+In this sample, we demonstrate a sample home gateway that manages few attached home devices like, Lights, Switches, Elevator, Oven and OutdoorTemperature. And the following configuration is assumed,
  
  * Few devices are not manageable
  * Few devices are manageable but accept only firmware
@@ -83,6 +83,6 @@ We need these details to connect the gateway to IBM Watson IoT Platform.
 
 Observe that the Application provides list of options to control one or more devices,
 
-Also, In order to push a **firmware to a Gateway/device or reboot Gateway/device**, follow the [part-2 and part-3 of this recipe](https://developer.ibm.com/recipes/tutorials/raspberry-pi-as-managed-gateway-in-watson-iot-platform-part-2/). This shows how to push a firmware using the Watson IoT Platform dabashboard.
+Also, In order to push a **firmware to a Gateway/device or reboot Gateway/device**, follow the [part-2 and part-3 of this recipe](https://developer.ibm.com/recipes/tutorials/raspberry-pi-as-managed-gateway-in-watson-iot-platform-part-2/). This shows how to push a firmware using the Watson IoT Platform dashboard.
 
 ----
