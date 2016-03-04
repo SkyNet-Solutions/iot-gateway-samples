@@ -20,6 +20,24 @@ To build and run the samples, you must have the following installed:
 
 ----
 
+### Build & Runing the samples using Eclipse
+
+You must have installed the [Eclipse Maven plugin](http://www.eclipse.org/m2e/), to import & run the samples in eclipse. Go to the next step, if you want to run manually.
+
+* Clone the gateway-samples project using git clone as follows,
+   
+    `git clone https://github.com/ibm-messaging/gateway-samples.git`
+
+* Import the advanced-gateway-sample project into eclipse using the File->Import option in eclipse.
+* Modify **gateway.properties** and **DMGatewaySample.properties** files with the gateway registration details (Refer below to know how to register the gateway in Watson IoT Platform).
+* Also, generate the Organization's API-Key and Token and update the same in both the properties files if the registration mode is manual (as of now, only the manual registration is supported).
+* Run the appropriate sample by by right clicking on the project and selecting "Run as" option.
+
+**Note**: Each sample section below has a link to recipe that explains the sample in more details and also how to run them.
+
+----
+
+
 ### Building the samples
 
 * Clone the gateway-samples project using git clone as follows,
