@@ -29,12 +29,19 @@ To build and run the sample, you must have the following installed:
 You must have installed the [Eclipse Maven plugin](http://www.eclipse.org/m2e/), to import & run the samples in eclipse. Go to the next step, if you want to run manually.
 
 * Clone the gateway-samples project using git clone as follows,
+
     `git clone https://github.com/ibm-messaging/gateway-samples.git`
+    
 * Import the advanced-gateway-sample project into eclipse using the File->Import option in eclipse.
+
 * Modify the **DMGatewaySample.properties** file with the gateway registration details (Refer below to know how to register the gateway in Watson IoT Platform).
+
 * Also, generate the Organization's API-Key and Token and update the same in **DMGatewaySample.properties** file if the registration mode is manual (as of now, only the manual registration is supported).
+
 * Run the **HomeGatewaySample** by right clicking on the project and selecting "Run as" option.
+
 * Observe that the gateway publishes events for itself and on behalf of the devices connected through it.
+
 * In order to control one or more devices, you need to start the **HomeApplication** present in the project. The application provides list of options to control the devices attached.
 
 ----
