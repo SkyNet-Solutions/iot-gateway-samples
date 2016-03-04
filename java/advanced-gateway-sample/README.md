@@ -1,13 +1,17 @@
 Advanced gateway sample
 ============================================
 
-In this sample, we demonstrate a sample home gateway that manages few attached home devices like, Lights, Switches, Elevator, Oven and OutdoorTemperature. And the following configuration is assumed,
+In this sample, we demonstrate a [sample home gateway](https://github.com/ibm-messaging/gateway-samples/blob/master/java/advanced-gateway-sample/src/main/java/com/ibm/iotf/sample/gateway/HomeGatewaySample.java) that manages few attached home devices like, Lights, Switches, Elevator, Oven and OutdoorTemperature. And the following configuration is assumed,
  
  * Few devices are not manageable
  * Few devices are manageable but accept only firmware
  * Few devices are manageable but accept only Device actions
  * Few devices are manageable and accept both firmware/device actions 
  * All devices publish events and few devices accept commands.
+
+Also, the sample has an [application](https://github.com/ibm-messaging/gateway-samples/blob/master/java/advanced-gateway-sample/src/main/java/com/ibm/iotf/sample/application/HomeApplication.java) that can be used to control one or more attached devices. For example, trun on/off a particular swicth, turn on Oven or control the brightness of the light and etc..
+
+Also, one can use the IBM Watson IoT Platform dashboard to update the firmware, reboot and reset the gateway or devices connected through the gateway.
 
 ----
 
@@ -31,7 +35,9 @@ You must have installed the [Eclipse Maven plugin](http://www.eclipse.org/m2e/),
 * Import the advanced-gateway-sample project into eclipse using the File->Import option in eclipse.
 * Modify the **DMGatewaySample.properties** file with the gateway registration details (Refer below to know how to register the gateway in Watson IoT Platform).
 * Also, generate the Organization's API-Key and Token and update the same in **DMGatewaySample.properties** file if the registration mode is manual (as of now, only the manual registration is supported).
-* Run the HomeGatewaySample by right clicking on the project and selecting "Run as" option.
+* Run the **HomeGatewaySample** by right clicking on the project and selecting "Run as" option.
+* Observe that the gateway publishes events for itself and on behalf of the devices connected through it.
+* In order to control one or more devices, you need to start the **HomeApplication** present in the project. The application provides list of options to control the devices attached.
 
 ----
 
