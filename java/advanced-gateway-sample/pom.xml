@@ -5,23 +5,23 @@
     <version>0.0.1</version>
     <name>ibmiot-gateway-samples</name>
     <description>A home gateway sample in Watson IoT Platform</description>
-	<url>https://github.com/ibm-messaging/gateway-samples</url>
+	<url>https://github.com/ibm-messaging/iot-gateway-samples</url>
 	
 	<scm>
-        <url>git@github.com:ibm-messaging/gateway-samples.git</url>
-        <connection>scm:git:git@github.com:ibm-messaging/gateway-samples.git</connection>
-        <developerConnection>scm:git:git@github.com:ibm-messaging/gateway-samples.git</developerConnection>
+        <url>git@github.com:ibm-messaging/iot-gateway-samples.git</url>
+        <connection>scm:git:git@github.com:ibm-messaging/iot-gateway-samples.git</connection>
+        <developerConnection>scm:git:git@github.com:ibm-messaging/iot-gateway-samples.git</developerConnection>
     </scm>
 
     <issueManagement>
-        <url>https://github.com/ibm-messaging/gateway-samples/issues</url>
+        <url>https://github.com/ibm-messaging/iot-gateway-samples/issues</url>
         <system>Issues @ GitHub</system>
     </issueManagement>
 
     <licenses>
         <license>
             <name>Eclipse Public License - v 1.0</name>
-            <url>https://github.com/ibm-messaging/gateway-samples/blob/master/LICENSE</url>
+            <url>https://github.com/ibm-messaging/iot-gateway-samples/blob/master/LICENSE</url>
             <distribution>repo</distribution>
         </license>
     </licenses>
