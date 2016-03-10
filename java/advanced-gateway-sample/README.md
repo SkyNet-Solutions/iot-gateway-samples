@@ -50,7 +50,7 @@ You must have installed the [Eclipse Maven plugin](http://www.eclipse.org/m2e/),
 
 #### Start Gateway Sample
 
-* Modify the **DMGatewaySample.properties** file with the gateway registration details (Refer below to know how to register the gateway in Watson IoT Platform).
+* Modify the **DMGatewaySample.properties** file with the gateway registration details that you noted in the previous step.
 
 * Also, generate the Organization's API-Key and Token and update the same in **DMGatewaySample.properties** file if the registration mode is manual (as of now, only the manual registration is supported).
 
