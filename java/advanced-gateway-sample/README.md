@@ -24,6 +24,20 @@ To build and run the sample, you must have the following installed:
 
 ----
 
+### Register Gateway in IBM Watson IoT Platform
+
+Follow the steps in [this recipe](https://developer.ibm.com/recipes/tutorials/how-to-register-gateways-in-ibm-watson-iot-platform/) to register your gateway in Watson IoT Platform if not registered already. And copy the registration details, like the following,
+
+* Organization-ID = [Your Organization ID]
+* Device-Type = [Your Gateway Device Type]
+* Device-ID = [Your Gateway Device ID]
+* Authentication-Method = token
+* Authentication-Token = [Your Gateway Token]
+
+We need these details to connect the gateway to IBM Watson IoT Platform.
+
+----
+
 ### Build & Run the sample using Eclipse
 
 You must have installed the [Eclipse Maven plugin](http://www.eclipse.org/m2e/), to import & run the samples in eclipse. Go to the next step, if you want to run manually.
@@ -51,20 +65,6 @@ In order to control one or more devices, you need to start the **HomeApplication
 * Modify the **application.properties** file with the organization details, like name, Organization's API-Key and Token.
 
 * Run the **HomeApplication** by right clicking on the project and selecting "Run as" option. The application provides list of options to control the devices attached.
-
-----
-
-### Register Gateway in IBM Watson IoT Platform
-
-Follow the steps in [this recipe](https://developer.ibm.com/recipes/tutorials/how-to-register-gateways-in-ibm-watson-iot-platform/) to register your gateway in Watson IoT Platform if not registered already. And copy the registration details, like the following,
-
-* Organization-ID = [Your Organization ID]
-* Device-Type = [Your Gateway Device Type]
-* Device-ID = [Your Gateway Device ID]
-* Authentication-Method = token
-* Authentication-Token = [Your Gateway Token]
-
-We need these details to connect the gateway to IBM Watson IoT Platform.
 
 ----
 
