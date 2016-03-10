@@ -37,8 +37,21 @@ You must have installed the [Eclipse Maven plugin](http://www.eclipse.org/m2e/),
 
 ----
 
+### Register Gateway in IBM Watson IoT Platform
 
-### Building the samples
+Follow the steps in [this recipe](https://developer.ibm.com/recipes/tutorials/how-to-register-gateways-in-ibm-watson-iot-platform/) to register your gateway in Watson IoT Platform if not registered already. And copy the registration details, like the following,
+
+* Organization-ID = [Your Organization ID]
+* Device-Type = [Your Gateway Device Type]
+* Device-ID = [Your Gateway Device ID]
+* Authentication-Method = token
+* Authentication-Token = [Your Gateway Token]
+
+We need these details to connect the gateway to IBM Watson IoT Platform.
+
+----
+
+### Building the samples - required if you want to run outside Eclipse
 
 * Clone the gateway-samples project using git clone as follows,
    
@@ -56,21 +69,7 @@ This will download the Java Client library for Watson IoT Platform (Currently it
 
 ----
 
-### Register Gateway in IBM Watson IoT Platform
-
-Follow the steps in [this recipe](https://developer.ibm.com/recipes/tutorials/how-to-register-gateways-in-ibm-watson-iot-platform/) to register your gateway in Watson IoT Platform if not registered already. And copy the registration details, like the following,
-
-* Organization-ID = [Your Organization ID]
-* Device-Type = [Your Gateway Device Type]
-* Device-ID = [Your Gateway Device ID]
-* Authentication-Method = token
-* Authentication-Token = [Your Gateway Token]
-
-We need these details to connect the gateway to IBM Watson IoT Platform.
-
-----
-
-### Running SimpleGatewayExample
+### Running SimpleGatewayExample outside Eclipse
 
 A stand-alone sample that connects a gateway and a device behind the gateway to IBM Watson IoT Platform. 
 
@@ -84,7 +83,7 @@ A stand-alone sample that connects a gateway and a device behind the gateway to 
 
 ----
 
-### Running SampleRasPiGateway Sample
+### Running SampleRasPiGateway Sample outside Eclipse
 
 The Gateway support is demonstrated in this sample by connecting the Arduino Uno to Raspberry Pi, where the Raspberry Pi act as a Gateway and publishes events/receives commands on behalf of Arduino Uno to IBM Watson IoT Platform. This sample has a simulator object and can be used in the places where Raspberry Pi and Arduino Uno is not there. Refer to [this recipe](https://developer.ibm.com/recipes/tutorials/connect-raspberry-pi-as-gateway-to-watson-iot-platform/) for more information about the sample and how to run the sample in detail?
 
@@ -96,13 +95,17 @@ The Gateway support is demonstrated in this sample by connecting the Arduino Uno
 
 **Note:** If there is an Error, try extracting the ibmwiotp.jar present in target/classes directory to the same location and run again. Remember the jar must be extracted in the same location. 
 
-* In order to push the command to blink the LED, one need to start the sample application present in the sample, Run the following command to start the application sample,
+* In order to push the command to blink the LED, one need to start the sample application present in the sample.
+
+* Modify the application.properties file with the Organization details, then,
+
+* Run the following command to start the application sample,
 
     `mvn exec:java -Dexec.mainClass="com.ibm.iotf.sample.client.application.SampleApplication"`
 
 ----
 
-### Running ManagedRasPiGateway Sample
+### Running ManagedRasPiGateway Sample outside Eclipse
 
 **Gateway Device Management(DM)** capabilities are demonstrated in this sample by managing the Arduino Uno device through the Raspberry Pi Gateway. If you do not have Raspberry Pi and Arduino UNO, don’t worry, you can still follow the sample to connect your device as a gateway and manage one or more attached devices. In this case, you can use your Windows or Linux server as the gateway instead of Raspberry Pi. Also, the sample has a simulator in place of Arduino UNO to respond to gateway requests. Refer to [this recipe](https://developer.ibm.com/recipes/tutorials/raspberry-pi-as-managed-gateway-in-watson-iot-platform-part-1/) for more information about the sample and how to run the sample in detail?
 
@@ -113,5 +116,13 @@ The Gateway support is demonstrated in this sample by connecting the Arduino Uno
     `mvn exec:java -Dexec.mainClass="com.ibm.iotf.sample.client.gateway.devicemgmt.ManagedRasPiGateway"`
 
 **Note:** If there is an Error, try extracting the ibmwiotp.jar present in target/classes directory to the same location and run again. Remember the jar must be extracted in the same location. 
+
+* In order to push the command to blink the LED, one need to start the sample application present in the sample.
+
+* Modify the application.properties file with the Organization details, then,
+
+* Run the following command to start the application sample,
+
+    `mvn exec:java -Dexec.mainClass="com.ibm.iotf.sample.client.application.SampleApplication"`
 
 ----
