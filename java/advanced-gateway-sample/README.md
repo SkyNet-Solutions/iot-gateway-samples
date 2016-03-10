@@ -34,6 +34,8 @@ You must have installed the [Eclipse Maven plugin](http://www.eclipse.org/m2e/),
     
 * Import the advanced-gateway-sample project into eclipse using the File->Import option in eclipse.
 
+#### Start Gateway Sample
+
 * Modify the **DMGatewaySample.properties** file with the gateway registration details (Refer below to know how to register the gateway in Watson IoT Platform).
 
 * Also, generate the Organization's API-Key and Token and update the same in **DMGatewaySample.properties** file if the registration mode is manual (as of now, only the manual registration is supported).
@@ -42,25 +44,13 @@ You must have installed the [Eclipse Maven plugin](http://www.eclipse.org/m2e/),
 
 * Observe that the gateway publishes events for itself and on behalf of the devices connected through it.
 
-* In order to control one or more devices, you need to start the **HomeApplication** present in the project. The application provides list of options to control the devices attached.
+#### Start Application Sample
 
-----
+In order to control one or more devices, you need to start the **HomeApplication** present in the project. 
 
-### Building the sample
+* Modify the **application.properties** file with the organization details, like name, Organization's API-Key and Token.
 
-* Clone the gateway-samples project using git clone as follows,
-   
-    `git clone https://github.com/ibm-messaging/gateway-samples.git`
-    
-* Navigate to the advanced-gateway-sample project, 
-
-    `cd gateway-samples\java\advanced-gateway-sample`
-    
-* Run the maven build as follows,
-
-    `mvn clean package`
-    
-This will download the Java Client library for Watson IoT Platform (Currently its shipped as part of this sample, but soon it will be made available in maven central repository), download all required dependencies and starts the building process. Once built, the sample can be located in the target directory, for example, target\ibmiot-advanced-gateway-sample-0.0.1.jar.
+* Run the **HomeApplication** by right clicking on the project and selecting "Run as" option. The application provides list of options to control the devices attached.
 
 ----
 
@@ -78,7 +68,25 @@ We need these details to connect the gateway to IBM Watson IoT Platform.
 
 ----
 
-### Running the HomeGateway Sample
+### Building the sample - Required if you want run outside Eclpise
+
+* Clone the gateway-samples project using git clone as follows,
+   
+    `git clone https://github.com/ibm-messaging/gateway-samples.git`
+    
+* Navigate to the advanced-gateway-sample project, 
+
+    `cd gateway-samples\java\advanced-gateway-sample`
+    
+* Run the maven build as follows,
+
+    `mvn clean package`
+    
+This will download the Java Client library for Watson IoT Platform (Currently its shipped as part of this sample, but soon it will be made available in maven central repository), download all required dependencies and starts the building process. Once built, the sample can be located in the target directory, for example, target\ibmiot-advanced-gateway-sample-0.0.1.jar.
+
+----
+
+### Running the HomeGateway Sample outside Eclipse
 
 * Navigate to **target/classes** directory and modify **MGatewaySample.properties** file with the registration details that you noted in the previous step.
 * Also, generate the Organization's API-Key and Token and update the same if the registration mode is manual (as of now, only the manual registration is supported)
@@ -88,7 +96,11 @@ We need these details to connect the gateway to IBM Watson IoT Platform.
 
 **Note:** If there is an Error, try extracting the ibmwiotp.jar present in target/classes directory to the same location and run again. Remember the jar must be extracted in the same location. 
 
-* In order to control one or more devices, one need to start the sample application present in the sample, Run the following command to start the application sample,
+* In order to control one or more devices, you need to start the **HomeApplication** present in the project. 
+
+* Modify the **application.properties** file with the organization details, like name, Organization's API-Key and Token.
+
+* Run the following command to start the application sample,
 
     `mvn exec:java -Dexec.mainClass="com.ibm.iotf.sample.application.HomeApplication"`
 
