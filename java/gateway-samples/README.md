@@ -51,7 +51,7 @@ You must have installed the [Eclipse Maven plugin](http://www.eclipse.org/m2e/),
     `git clone https://github.com/ibm-messaging/gateway-samples.git`
 
 * Import the advanced-gateway-sample project into eclipse using the File->Import option in eclipse.
-* Modify **gateway.properties** and **DMGatewaySample.properties** files with the gateway registration details (Refer below to know how to register the gateway in Watson IoT Platform).
+* Modify **gateway.properties** and **DMGatewaySample.properties** files with the gateway registration details.
 * Also, generate the Organization's API-Key and Token and update the same in both the properties files if the registration mode is manual (as of now, only the manual registration is supported).
 * Run the appropriate sample by by right clicking on the project and selecting "Run as" option.
 
