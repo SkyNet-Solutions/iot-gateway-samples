@@ -11,6 +11,14 @@ Following are examples present in this project,
 
 ----
 
+###Tutorial explaining the samples
+
+Refer to [this recipe](https://developer.ibm.com/recipes/tutorials/connect-raspberry-pi-as-gateway-to-watson-iot-platform/), that explains how to connect your Gateway and devices behind the Gateway to IBM Watson Internet of Things Platform with the sample present in this github project. 
+
+Refer to [this recipe](https://developer.ibm.com/recipes/tutorials/raspberry-pi-as-managed-gateway-in-watson-iot-platform-part-1/), that explains how to connect your Gateway as managed device in IBM Watson Internet of Things Platform and perform one or more device management operations. 
+
+----
+
 ### Prerequisites
 To build and run the samples, you must have the following installed:
 
