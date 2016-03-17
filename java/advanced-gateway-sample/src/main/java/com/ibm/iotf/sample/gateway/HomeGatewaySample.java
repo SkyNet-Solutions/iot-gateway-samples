@@ -99,7 +99,6 @@ public class HomeGatewaySample {
 			System.exit(-1);
 		}
 
-
 		/**
 		 * Let us create the DeviceData object with the DeviceInfo object
 		 */

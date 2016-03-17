@@ -200,12 +200,10 @@
     </build>
 
 
-    <repositories>
-
-        <!-- Dependency of the Paho mqqt snapshot is here -->
-        <repository>
-            <id>Eclipse Paho Release Repo</id>
-            <url>https://repo.eclipse.org/content/repositories/paho-releases/</url>
-        </repository>
-    </repositories>
+   <repositories>
+		<repository>
+			<id>Eclipse Paho Repo</id>
+			<url>https://repo.eclipse.org/content/repositories/paho-snapshots/</url>
+		</repository>
+	</repositories>
 </project>
