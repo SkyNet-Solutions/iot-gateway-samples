@@ -83,11 +83,10 @@ A stand-alone sample that connects a gateway and a device behind the gateway to 
 
 * Navigate to **target/classes** directory and modify **gateway.properties** file with the registration details that you noted in the previous step.
 * Also, generate the Organization's API-Key and Token and update the same if the registration mode is manual (as of now, only the manual registration is supported)
-* Run the sample using the following command,
+* Extract the ibmwiotp.jar present in target/classes directory to the same location and run again. Remember the jar must be extracted in the same location
+* Go back to the root directory where the POM file is present and run the sample using the following command,
 
     `mvn exec:java -Dexec.mainClass="com.ibm.iotf.sample.client.gateway.SimpleGatewayExample"`
-
-**Note:** If there is an Error, try extracting the ibmwiotp.jar present in target/classes directory to the same location and run again. Remember the jar must be extracted in the same location. 
 
 ----
 
@@ -97,11 +96,10 @@ The Gateway support is demonstrated in this sample by connecting the Arduino Uno
 
 * Navigate to **target/classes** directory and modify **gateway.properties** file with the registration details that you noted in the previous step.
 * Also, generate the Organization's API-Key and Token and update the same if the registration mode is manual (as of now, only the manual registration is supported)
-* Run the sample using the following command,
+* Extract the ibmwiotp.jar present in target/classes directory to the same location and run again. Remember the jar must be extracted in the same location
+* Go back to the root directory and run the sample using the following command,
 
     `mvn exec:java -Dexec.mainClass="com.ibm.iotf.sample.client.gateway.SampleRasPiGateway"`
-
-**Note:** If there is an Error, try extracting the ibmwiotp.jar present in target/classes directory to the same location and run again. Remember the jar must be extracted in the same location. 
 
 * In order to push the command to blink the LED, one need to start the sample application present in the sample.
 
@@ -119,11 +117,10 @@ The Gateway support is demonstrated in this sample by connecting the Arduino Uno
 
 * Navigate to **target/classes** directory and modify **DMGatewaySample.properties** file with the registration details that you noted in the previous step.
 * Also, generate the Organization's API-Key and Token and update the same if the registration mode is manual (as of now, only the manual registration is supported)
-* Run the sample using the following command,
+* Extract the ibmwiotp.jar present in target/classes directory to the same location and run again. Remember the jar must be extracted in the same location
+* Go back to the root directory and run the sample using the following command,
 
     `mvn exec:java -Dexec.mainClass="com.ibm.iotf.sample.client.gateway.devicemgmt.ManagedRasPiGateway"`
-
-**Note:** If there is an Error, try extracting the ibmwiotp.jar present in target/classes directory to the same location and run again. Remember the jar must be extracted in the same location. 
 
 * In order to push the command to blink the LED, one need to start the sample application present in the sample.
 
